@@ -16,11 +16,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Ensure system dependencies are installed
-      shell: bash
-      run: |
-        sudo yum install -y tar gzip which
-
     - name: Install uv
       shell: bash
       run: |
